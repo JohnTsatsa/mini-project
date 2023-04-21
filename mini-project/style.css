@@ -1,0 +1,100 @@
+/*------   google "font" choose your preference and import  ------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+header {
+	background-color: #333;
+	color: #fff;
+	font-size: 10px;
+	margin: 15px auto;
+	padding: 10px 15px;
+	text-align: center;
+	width: fit-content;
+	border-radius: 30px;
+	position: relative;
+}
+
+header::before {
+	content: "";
+	border: 1px solid #333;
+	padding: 0.5px;
+	position: absolute;
+	top: 49%;
+	left: -500%;
+	width: 5000%;
+	height: 0.1px;
+	z-index: -1;
+}
+
+
+header::after {
+	content: "";
+	border: 1px solid #333;
+	padding: 0.5px;
+	position: absolute;
+	top: 53%;
+	left: -500%;
+	width: 5000%;
+	height: 0.1px;
+	z-index: -1;
+}
+
+main {
+	margin: 20px auto;
+	width: 80%;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+
+article {
+	margin-right: 3vw;
+	background-color: #f5f5f5;
+	width: 400px;
+	height: 400px;
+}
+
+article img {
+	height: 50%;
+	width: 100%;
+	object-fit: cover;
+	border-bottom: 1px solid red;
+}
+.category-link,.date,h2,ul{
+	padding: 0 20px;
+}
+
+ul{
+	margin-bottom: 20px;
+}
+
+.category-link {
+	font-style: italic;
+	color: red;
+	text-decoration: none;
+}
+
+.article-link {
+	color: black;
+	text-decoration: none;
+}
+
+article h2 {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.date {
+	font-style: italic;
+}
